@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document  header.css */
+
+.header {
+     grid-area:hd;
+     display: flex;
+	 border: 1px solid red;
+     background-color:#CFCFCF;
+}
+
+.site-logo {
+    width: 180px;
+}
+
+.header-title {
+    margin-left: 20px;
+    padding-top: 2%;
+    color:#C59B08; 
+}
