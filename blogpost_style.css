@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document style.css */
+
+@import "blogpost_content.css";
+@import "sidebar.css";
+@import "header.css";
+@import "footer.css";
+
+
+
+/* Mobile first */
+.container {
+  font-family:optima,courier,arial,helvetica;
+  display:grid;
+  grid-template-columns: 450px 450px;
+  grid-template-rows: 250px 600px;
+  border: 2px solid yellow;
+  background: rgba(230, 235, 224, 0.5);
+    /* Use grid-template-area to create a mobile layout where each named space occupies its own row */
+  grid-template-areas:
+  "hd"
+  "sd"
+  "main"
+  "ft";
+  }
+/* If Screen Is Wide Enough */
+@media(min-width:900px) {
+    .container {
+        display: grid;        
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px 1fr 140px;
+        grid-template-areas:           
+        "hd hd"
+        "main sd"
+        "ft ft";
+        grid-gap: 10px;
+        height: 100vh;
+        width: 100vw; 
+		border: 2px solid red;
+    }
+}
+/* Element styles */
+a {
+    color: #C59B08;
+    text-decoration: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #C59B08;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+p {
+    margin: 1.2em 0;
+}
+
+#header-quote {
+  quotes: "'" "'";
+}
+
