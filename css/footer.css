@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document  footer.css */
+
+.grid-footer {
+    grid-area: ft;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px auto 40px auto;
+	/*border: 1px solid red;   -- red line for debug purposes */
+    background-color:#CFCFCF;
+ } 
+
+.socialmedia-buttons {
+    display: flex;
+    flex-direction: row;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+ #footer-text {
+    margin-left: 7px;
+    text-decoration: underline;
+    font-weight: bold; 
+}
+
+@media(min-width: 1051px) {
+  .site-footer {
+    display: flex;
+    flex-direction: row;
+    }
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document sidebar.css */
+
+.sidebar {
+    font-family:optima,courier,arial,helvetica;
+    grid-area: sd;
+	/*border: 1px solid red;   -- red line for debug purposes */
+    font-style: italic;
+    background: rgba(230, 235, 224, 0.5);
+}
+.author-info {
+    margin-top: 10px;
+    font-style:normal;
+}
+
+.author-info-text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #C59B08;
+}
+
+li {
+    margin: 0 1rem;
+    font-size: 2.0rem;
+}
+
+li:hover {
+    font-weight: bolder;
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document blogpost_content.css */
+
+.content {
+    grid-area: main;
+    /*border: 2px solid red;  -- red border for debug purpose */
+}
+
+.blog-card-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blog-card-photo {
+    grid-area: photo;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 50vh;
+    grid-row: 2;  /* assign the photo column to 2, so it is on the bottom */
+}
+
+.blog-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "cont"
+    "photo";
+    margin: 20px;
+    border-radius: 5px;
+    max-width: 900px;
+}
+
+.to-home {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 150%;
+    margin-left: 40px;
+    color: rgb(40, 116, 160);
+}
