@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document blogpost_header;.css*/
+
+.header {
+     grid-area:hd;
+     display: flex;
+	/* border: 1px solid red; -- red border for debug purpose */
+     background-color:#CFCFCF;
+}
+
+.site-logo {
+ width: 180px;
+ vertical-align:middle; 
+ margin:10px 50px;
+}
+
+.header-title {
+    margin-left: 20px;
+    padding-top: 2%;
+    color:#C59B08; 
+}
+
+#header-quote {
+  quotes: "'" "'";
+}
