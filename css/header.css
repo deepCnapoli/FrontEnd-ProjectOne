@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document  header.css */
+
+.header {
+     grid-area:hd;
+     flex-direction: row;  /* rev:2jan21 to make title responsive */
+     display: inline-flex; /* part of above rev: move title under logo */
+     flex-wrap: wrap;      /* part of above rev: move title under logo */
+	/* border: 1px solid red;  -- red line for debug purposes */
+     background-color:#CFCFCF;
+}
+
+.site-logo {
+    width: 180px;
+    vertical-align:middle;
+    margin:10px 50px;
+}
+
+.header-title {    
+    margin-left: 20px;
+    padding-top: 2%;
+    color:#C59B08; 
+ }  
+
+#header-quote {
+  quotes: "'" "'";
+}
